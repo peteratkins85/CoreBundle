@@ -1,0 +1,62 @@
+parameters:
+    #entities
+    oni_languages_entity: Oni\CoreBundle\Entity\Languages
+    #Repositories
+    oni_language_repository: Oni\CoreBundle\Entity\LanguagesRepository
+    #Service
+    oni_core_service: Oni\CoreBundle\Service\CoreService
+    #Factorys
+    oni_repository_factory: Oni\CoreBundle\Factory\RepositoryFactory
+    oni_controller_factory: Oni\CoreBundle\Factory\ControllerFactory
+
+services:
+    #Entities
+    oni_languages_entity:
+        class:    Oni\CoreBundle\Entity\Languages
+    oni_language_repository:
+        class:     Oni\CoreBundle\Entity\LanguagesRepository
+        factory: [ '@doctrine.orm.default_entity_manager',  getRepository]
+        arguments:
+            - Oni\CoreBundle\Entity\Languages
+    #Controllers
+    oni_general_service_controller:
+        class: Oni\CoreBundle\Controller\GeneralServiceController
+        factory: ['@oni_general_service_controller_factory', getService ]
+        arguments:
+            - '@service_container'
+    #Services
+    oni_core_service:
+        class: "%oni_core_service%"
+        arguments:
+            - "@service_container"
+    oni_get_locale:
+        class: "%oni_languages_entity%"
+        factory: [ '@oni_core_service',  getLocale ]
+    oni_get_available_languages:
+        class: "%oni_languages_entity%"
+        factory: [ '@oni_core_service',  getAvailableLanguages ]
+    oni_flash_message_service:
+        class: Oni\CoreBundle\Service\FlashMessageService
+        arguments: ["@service_container", "@translator.default"]
+    oni_country_service:
+        class: Oni\CoreBundle\Service\CountryService
+        factory: [ '@oni_country_service_factory', getService ]
+        arguments:
+            - '@service_container'
+    #FormTypes
+    oni_type_entity_hidden:
+        class: Oni\CoreBundle\Form\Type\EntityHiddenType
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - { name: form.type }
+    #Factory
+    #Event Listeners
+    oni_event_dispatcher:
+        class: Oni\CoreBundle\EventListeners\OniEventDispatcher
+    oni_locale_listener:
+        class: Oni\CoreBundle\EventListeners\LocaleListener
+        arguments: ["%locale%","@service_container"]
+        tags:
+           - { name: kernel.event_subscriber }
+
+

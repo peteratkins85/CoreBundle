@@ -1,0 +1,5 @@
+services:
+    oni_twig_extension.core:
+            class: Oni\CoreBundle\Twig\CoreExtension
+            tags:
+                -  { name: twig.extension }

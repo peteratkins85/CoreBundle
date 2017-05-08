@@ -1,0 +1,10 @@
+parameters:
+
+services:
+    #Services
+    oni_country_service_factory:
+        class: Oni\CoreBundle\Factory\Service\CountryServiceFactory
+    #Controllers
+    oni_general_service_controller_factory:
+        class: Oni\CoreBundle\Factory\Controller\GeneralServiceControllerFactory
+

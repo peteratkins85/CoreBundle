@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <!--CoreBundle-->
+            <trans-unit id="1">
+                <source>core_bundle.administration</source>
+                <target>Administration</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>core_bundle.employee</source>
+                <target>Employee</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>core_bundle.employees</source>
+                <target>Employees</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>core_bundle.user</source>
+                <target>User</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>core_bundle.users</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>core_bundle.localisation</source>
+                <target>Localisation</target>
+            </trans-unit>
+            <!--ProductManagerBundle-->
+            <trans-unit id="7">
+                <source>product_bundle.product.manager</source>
+                <target>Product Manager</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>product_bundle.product.categories</source>
+                <target>Product Categories</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>product_bundle.product.category</source>
+                <target>Product Category</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>product_bundle.add.product.category</source>
+                <target>Add Product Category</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>product_bundle.edit.product.category</source>
+                <target>Edit Product Category</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>product_bundle.products</source>
+                <target>Products</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>product_bundle.product</source>
+                <target>Product</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>product_bundle.product.category.deleted</source>
+                <target>Product Category deleted!</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>product_bundle.invalid.product.category.id</source>
+                <target>Invalid product category Id</target>
+            </trans-unit>
+            <!--TravelPortBundle-->
+            <trans-unit id="16">
+                <source>travel-connect-bundle.travel.connect</source>
+                <target>Travel Connect</target>
+            </trans-unit>
+            <!--modal-messages-->
+            <trans-unit id="17">
+                <source>modal-messages.insert.new.default.only</source>
+                <target>New %item% can only be created in the default language %locale%</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>modal-messages.delete.confirm.msg</source>
+                <target>Your about to delete %item% "<![CDATA[<b>]]>%name%<![CDATA[</b>]]>", <![CDATA[</br>]]>  click confirm if you'd like to proceed</target>
+            </trans-unit>
+            <!--Common Text-->
+            <trans-unit id="19">
+                <source>name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>edit</source>
+                <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>delete</source>
+                <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>close</source>
+                <target>Close</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

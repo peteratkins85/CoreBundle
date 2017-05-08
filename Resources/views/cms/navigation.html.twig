@@ -1,0 +1,61 @@
+<div id='main-nav-bg'></div>
+<nav id='main-nav'>
+    <div class='navigation'>
+        <div class='search'>
+            <form action='search_results.html' method='get'>
+                <div class='search-wrapper'>
+                    <input value="" class="search-query" placeholder="Search..." autocomplete="off" name="q" type="text" />
+                    <button class='btn btn-link icon-search' name='button' type='submit'></button>
+                </div>
+            </form>
+        </div>
+        <ul class='nav nav-stacked'>
+            <li class='active'>
+                <a href='index.html'>
+                    <i class='icon-dashboard'></i>
+                    <span>{% if pageName is defined %} {{ pageName }} {%  endif %}</span>
+                </a>
+            </li>
+            <li class=''>
+                <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+                    <span>{{ 'core_bundle.administration'|trans }}</span>
+                    <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                    <li class=''>
+                        <a href='{{ url('oni_user_list') }}'>
+                            <i class='icon-caret-right'></i>
+                            <span>{{ 'core_bundle.users'|trans }}</span>
+                        </a>
+                    </li>
+                    <li class=''>
+                        <a href=''>
+                            <i class='icon-caret-right'></i>
+                            <span>{{ 'core_bundle.localisation'|trans }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class=''>
+                <a class="dropdown-collapse" href="#"><i class='icon-plane'></i>
+                    <span>{{ 'travel-connect-bundle.travel.connect'|trans }}</span>
+                    <i class='icon-angle-down angle-down'></i>
+                </a>
+                <ul class='nav nav-stacked'>
+                    <li class=''>
+                        <a href='{{ url('oni_travel_port_user_index') }}'>
+                            <i class='icon-caret-right'></i>
+                            <span>{{ 'travel_port_bundle.users'|trans }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            {% if oni_navigation_templates is defined and oni_navigation_templates|length > 0  %}
+                {% for template in oni_navigation_templates %}
+                    {% include template %}
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+</nav>

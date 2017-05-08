@@ -1,0 +1,37 @@
+<table class='data-table-products table table-bordered table-striped' data='' style='margin-bottom:0;'>
+{% block header %}
+    <thead>
+    {% for title in titles %}
+        <th><b>{{ title|trans }}</b></th>
+    {% endfor %}
+    {% if edit_options is defined %}
+    <td></td>
+    {% endif %}
+    </tr>
+    </thead>
+{% endblock %}
+
+    {% block body %}
+
+        <tbody>
+
+        </tbody>
+
+    {%  endblock %}
+
+{% block footer %}
+
+    <tfoot>
+    <tr>
+        {% for title in titles|keys %}
+            {% if loop.last %}
+                <th colspan='2'>{{ title|trans }}</th>
+            {% else %}
+                <th>{{ title|trans }}</th>
+            {% endif %}
+        {% endfor %}
+    </tr>
+    </tfoot>
+
+{% endblock %}
+</table>

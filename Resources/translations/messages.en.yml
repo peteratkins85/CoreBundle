@@ -1,0 +1,22 @@
+core_bundle:
+        administration: Administration
+        employee: Employee
+        employees: Employees
+        user: User
+        users: Users
+        localisation: Localisation
+
+travel-connect-bundle:
+        travel.connect: Travel Connect
+
+modal-messages:
+        insert.new.default.only: New %item% can only be created in the default language %locale%
+        delete.confirm.msg: Your about to delete %item% "<b>%name%</b>",  click confirm if you'd like to proceed
+
+name: Name
+username: Username
+edit: Edit
+delete: Delete
+close: Close
+enable: Enable
+disable: Disable

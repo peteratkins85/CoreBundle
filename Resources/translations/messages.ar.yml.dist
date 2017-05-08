@@ -1,0 +1,30 @@
+core.bundle:
+    administration: إدارة
+    employees: الموظفين
+    employees: الموظفين
+    user: المستعمل
+    users: المستخدمين
+    localisation: موقع
+
+
+product.bundle:
+    product.manager: مدير المنتج
+    product.categories: أصناف المنتجات
+    product.category: فئة المنتج
+    add.product.category: إضافة فئة المنتج
+    edit.product.category: تحرير فئة المنتج
+    products: المنتجات
+
+travel-connect.bundle:
+    travel.connect: Travel Connect
+
+standard:
+    insert.new.default.only: جديد %item% لا يمكن إلا أن تنشأ في اللغة الافتراضية %locale%
+    delete.confirm.msg: الخاصة بك على وشك حذف %item% " %name% " ، وإذا كان هذا هو الخاص بك عمل بادئة انقر فوق تأكيد
+
+name: اسم
+username: اسم المستخدم
+edit: تحرير
+delete: حذف
+close: أغلق
+

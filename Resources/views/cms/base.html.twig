@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta content='Flat administration template for Twitter Bootstrap.' name='description'>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"/>
+    {{ include('CoreBundle:cms:head.html.twig') }}§
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+<body class="contrast-dark {% block bodyClass %}{% endblock %}">
+<input type="hidden" value="{{ app.environment }}" data-oni-environment="oni-environment">
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+    {% include 'CoreBundle:cms:header.html.twig' %}
+{% endif %}
+<div id='wrapper'>
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        {% include 'CoreBundle:cms:navigation.html.twig' %}
+    {% endif %}
+    {% block body %}
+    {% endblock %}
+</div>
+{{ include('CoreBundle:cms:javascript-include.html.twig') }}
+{{ include('@Core/cms/modals.html.twig') }}
+{% block javascripts %}{% endblock %}
+</body>
+</html>

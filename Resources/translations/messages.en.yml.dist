@@ -1,0 +1,33 @@
+core.bundle:
+    administration: Administration
+    employee: Employee
+    employees: Employees
+    user: User
+    users: Users
+    localisation: Localisation
+
+product.bundle:
+    product.manager: Product Manager
+    product.categories: Product Categories
+    add.product.category: Add Product Category
+    edit.product.category: Edit Product Category
+    product.category: Product Category
+    products: Products
+    product.category.deleted: Product Category deleted!
+    invalid.product.category.id: Invalid product category Id
+
+
+travel-connect-bundle:
+    travel.connect: Travel Connect
+
+
+
+modal-messages:
+    insert.new.default.only: New %item% can only be created in the default language %locale%
+    delete.confirm.msg: Your about to delete %item% "<b>%name%</b>", <br> click confirm if you'd like to proceed
+
+name: Name
+username: Username
+edit: Edit
+delete: Delete
+close: Close

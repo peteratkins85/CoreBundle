@@ -1,0 +1,12 @@
+url.can.only.contain: Url can only container a-z, 0-9 _-
+url.already.in.use: This url is already in use.
+name.can.only.contain: Name can only container a-z, 0-9 _-
+name.already.in.use: This name is already in use.
+value.can.only.contain.underscore.hyphen.alphanumeric: Value can only contain a-z, A-Z, 0-9 -_
+two.or.more.chars: Must be 2 or more character long
+six.or.more.chars: Must be 6 or more character long
+fifty.or.less.chars: Too long max length is 50 characters
+twenty.or.less.chars: Too long max length is 20 characters
+onehundred.or.less.chars: Too long max length is 100 characters
+email.already.in.use: Email Address is already in use.
+username.already.in.use: Username is already in use.
