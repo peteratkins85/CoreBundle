@@ -20,7 +20,7 @@ class UrlDecodeExtension extends Twig_Extension
     public function getFilters()
     {
         return array(
-            'url_decode' => new \Twig_Filter_Method($this, 'urlDecode')
+            'url_decode' => new \Twig_SimpleFilter('url_decode', 'urlDecode')
         );
     }
 

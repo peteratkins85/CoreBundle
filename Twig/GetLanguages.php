@@ -16,7 +16,7 @@ class GetLanguages extends \Twig_Environment
     public function getGlobals(){
 
         return array(
-            'text' => new Text(),
+            'text' => '',
         );
 
     }
