@@ -1,6 +1,6 @@
 {
   "name": "oni-sys/core-bundle",
-  "type": "symfony-bundle",
+  "type": "project",
   "license": "MIT",
   "authors": [
     {
