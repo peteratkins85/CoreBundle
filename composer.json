@@ -1,6 +1,6 @@
 {
   "name": "oni-sys/core-bundle",
-  "type": "project",
+  "type": "oni-bundle",
   "license": "MIT",
   "authors": [
     {
