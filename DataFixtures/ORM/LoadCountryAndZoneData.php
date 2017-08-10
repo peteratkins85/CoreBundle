@@ -12,13 +12,10 @@ use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Oni\CoreBundle\Entity\Country;
 use Oni\CoreBundle\Entity\Zone;
-use Oni\ProductManagerBundle\Entity\Currency;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Oni\CoreBundle\Entity\Languages;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Symfony\Component\Validator\Constraints\Count;
 
 class LoadCountryAndZoneData extends AbstractFixture implements OrderedFixtureInterface ,FixtureInterface, ContainerAwareInterface
 {
@@ -63,13 +60,21 @@ class LoadCountryAndZoneData extends AbstractFixture implements OrderedFixtureIn
         $zone1 = new Zone();
         $zone1->setZoneName('United Kingdom');
         $zone1->addCountry($countries['GBR']);
+        $zone1->setZoneType('standard');
+
+        $zone2 = new Zone();
+        $zone2->setZoneName('United States OF America');
+        $zone2->addCountry($countries['USA']);
+        $zone2->setZoneType('standard');
 
         $em->persist($zone);
         $em->persist($zone1);
+        $em->persist($zone2);
         $em->flush();
 
         $this->addReference('globalZone', $zone);
-        $this->addReference('ukZone', $zone);
+        $this->addReference('ukZone', $zone1);
+        $this->addReference('usZone', $zone2);
     }
 
     public function getOrder()

@@ -43,12 +43,7 @@ services:
         factory: [ '@oni_country_service_factory', getService ]
         arguments:
             - '@service_container'
-    #FormTypes
-    oni_type_entity_hidden:
-        class: Oni\CoreBundle\Form\Type\EntityHiddenType
-        arguments: ["@doctrine.orm.entity_manager"]
-        tags:
-            - { name: form.type }
+
     #Factory
     #Event Listeners
     oni_event_dispatcher:

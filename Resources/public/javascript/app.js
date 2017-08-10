@@ -25,6 +25,7 @@ ONI_APP.prototype = {
     ui: {
         initEvents: function () {
             $(document).on('click', '.oni-delete-action', function (e) {
+                e.preventDefault();
                 var url = $(this).attr('delete-url');
                 var msg = $(this).attr('delete-msg');
                 var modal = $($(this).attr('href'));
@@ -33,6 +34,11 @@ ONI_APP.prototype = {
                     modal.find('.modal-body').html(msg);
                     modal.find('.oni-action-btn').attr('href', url);
                 }
+            });
+
+            $(document).on('click', '.close-btn', function (e) {
+                e.preventDefault();
+                $(this).parent().remove();
             });
         }
     },

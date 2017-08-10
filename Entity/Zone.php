@@ -28,10 +28,19 @@ class Zone
      */
     private $zoneName;
 
+
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Country", mappedBy="zones")
+     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Country", inversedBy="zones")
+     * @ORM\JoinTable(name="oni_zone_country_relations",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="countryId", referencedColumnName="id")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="zoneId", referencedColumnName="id")
+     *   }
+     * )
      */
     private $countries;
 
@@ -134,5 +143,18 @@ class Zone
     public function getCountries()
     {
         return $this->countries;
+    }
+
+    /**
+     * @return $this
+     */
+    public function getZone()
+    {
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getZoneName();
     }
 }

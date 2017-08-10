@@ -5,3 +5,4 @@ oni_core_request:
 countries:
     type: rest
     resource: Oni\CoreBundle\Controller\Api\CountryController
+

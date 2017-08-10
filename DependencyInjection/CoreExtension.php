@@ -26,5 +26,6 @@ class CoreExtension extends Extension
         $loader->load('services.yml');
         $loader->load('factories.yml');
         $loader->load('twig_extensions.yml');
+        $loader->load('forms.yml');
     }
 }

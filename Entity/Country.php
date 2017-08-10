@@ -95,15 +95,7 @@ class Country
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Zone", inversedBy="countries")
-     * @ORM\JoinTable(name="oni_zone_country_relations",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="zoneId", referencedColumnName="id")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="countryId", referencedColumnName="id")
-     *   }
-     * )
+     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Zone", mappedBy="countries")
      */
     private $zones;
 

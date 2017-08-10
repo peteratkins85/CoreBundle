@@ -22,7 +22,7 @@ class CoreController extends Controller implements TranslatorAwareInterface
     protected $container;
 
     /**
-     * @var
+     * @var Translator
      */
     protected $translator;
 

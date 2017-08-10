@@ -106,6 +106,13 @@ class Currency
     }
 
     /**
+     * @return $this
+     */
+    public function getCurrency(){
+        return $this;
+    }
+
+    /**
      * Get enabled
      *
      * @return bool
@@ -186,4 +193,10 @@ class Currency
     {
         return $this->currencyName;
     }
+
+    public function __toString()
+    {
+        return $this->getCurrencyName() ?: '';
+    }
+
 }
