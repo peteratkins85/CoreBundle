@@ -6,7 +6,7 @@
  * Time: 07:38
  */
 
-namespace Oni\CoreBundle\Common;
+namespace App\Oni\CoreBundle\Common;
 
 
 class CoreCommon

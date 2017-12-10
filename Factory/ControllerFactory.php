@@ -6,11 +6,11 @@
  * Time: 01:21
  */
 
-namespace Oni\CoreBundle\Factory;
+namespace App\Oni\CoreBundle\Factory;
 
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Oni\CoreBundle\Controller\CoreController;
+use App\Oni\CoreBundle\Controller\CoreController;
 use Doctrine\ORM\EntityRepository;
 
 class ControllerFactory extends CoreAbstractFactory

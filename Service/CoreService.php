@@ -6,11 +6,11 @@
  * Time: 23:25
  */
 
-namespace Oni\CoreBundle\Service;
+namespace App\Oni\CoreBundle\Service;
 
-use Oni\CoreBundle\Entity\Languages;
-use Oni\CoreBundle\Entity\Repository\LanguagesRepository;
-use Oni\CoreBundle\SessionKeys;
+use App\Oni\CoreBundle\Entity\Languages;
+use App\Oni\CoreBundle\Entity\Repository\LanguagesRepository;
+use App\Oni\CoreBundle\SessionKeys;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Intl\Intl;
 use \Exception;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Entity;
+namespace App\Oni\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -87,11 +87,11 @@ class City implements \JsonSerializable
     /**
      * Set country
      *
-     * @param \Oni\CoreBundle\Entity\Country $country
+     * @param \App\Oni\CoreBundle\Entity\Country $country
      *
      * @return City
      */
-    public function setCountry(\Oni\CoreBundle\Entity\Country $country = null)
+    public function setCountry(\App\Oni\CoreBundle\Entity\Country $country = null)
     {
         $this->country = $country;
 
@@ -101,7 +101,7 @@ class City implements \JsonSerializable
     /**
      * Get country
      *
-     * @return \Oni\CoreBundle\Entity\Country
+     * @return \App\Oni\CoreBundle\Entity\Country
      */
     public function getCountry()
     {

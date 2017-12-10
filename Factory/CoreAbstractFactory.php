@@ -6,9 +6,9 @@
  * Time: 15:37
  */
 
-namespace Oni\CoreBundle\Factory;
+namespace App\Oni\CoreBundle\Factory;
 
-use Oni\CoreBundle\Entity\TranslatorAwareInterface;
+use App\Oni\CoreBundle\Entity\TranslatorAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

@@ -6,7 +6,7 @@
  * Time: 22:01
  */
 
-namespace Oni\CoreBundle\Common;
+namespace App\Oni\CoreBundle\Common;
 
 
 interface LocaleAwareInterface

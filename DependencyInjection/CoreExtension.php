@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\DependencyInjection;
+namespace App\Oni\CoreBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -26,5 +26,6 @@ class CoreExtension extends Extension
         $loader->load('services.yml');
         $loader->load('factories.yml');
         $loader->load('twig_extensions.yml');
+        $loader->load('forms.yml');
     }
 }

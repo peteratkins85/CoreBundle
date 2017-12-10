@@ -6,7 +6,7 @@
  * Time: 20:48
  */
 
-namespace Oni\CoreBundle\Controller\Api;
+namespace App\Oni\CoreBundle\Controller\Api;
 
 
 class CountryController {

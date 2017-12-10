@@ -6,7 +6,7 @@
  * Time: 21:26
  */
 
-namespace Oni\CoreBundle\Doctrine\Spec;
+namespace App\Oni\CoreBundle\Doctrine\Spec;
 
 
 trait LocaleTrait

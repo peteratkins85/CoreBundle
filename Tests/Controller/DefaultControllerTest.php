@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Tests\Controller;
+namespace App\Oni\CoreBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

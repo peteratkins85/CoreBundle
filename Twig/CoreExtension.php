@@ -6,7 +6,7 @@
  * Time: 00:35
  */
 
-namespace Oni\CoreBundle\Twig;
+namespace App\Oni\CoreBundle\Twig;
 
 use \Twig_Extension;
 
@@ -19,7 +19,7 @@ class CoreExtension extends Twig_Extension
     public function getFilters()
     {
         return [
-            'url_decode' => new \Twig_Filter_Method($this, 'urlDecode')
+            'url_decode' => new \Twig_SimpleFilter('url_decode', 'urlDecode')
         ];
     }
 

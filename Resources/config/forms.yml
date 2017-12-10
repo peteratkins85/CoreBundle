@@ -1,0 +1,20 @@
+services:
+    #Entities
+    oni_type_entity_hidden:
+        class: Oni\CoreBundle\Form\Type\EntityHiddenType
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+          - { name: form.type }
+    #Controllers
+    oni_type_county:
+        class: Oni\CoreBundle\Form\Type\CountryType
+        tags:
+          - { name: form.type }
+    oni_type_zone:
+        class: Oni\CoreBundle\Form\Type\ZoneType
+        tags:
+          - { name: form.type }
+    oni_type_currency:
+        class: Oni\CoreBundle\Form\Type\CurrencyType
+        tags:
+          - { name: form.type }

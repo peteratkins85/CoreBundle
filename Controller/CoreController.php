@@ -1,9 +1,9 @@
 <?php
 
-namespace Oni\CoreBundle\Controller;
+namespace App\Oni\CoreBundle\Controller;
 
-use Oni\CoreBundle\Entity\Repository\LanguagesRepository;
-use Oni\CoreBundle\Entity\TranslatorAwareInterface;
+use App\Oni\CoreBundle\Entity\Repository\LanguagesRepository;
+use App\Oni\CoreBundle\Entity\TranslatorAwareInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Oni\ProductManagerBundle\Entity\Products;
@@ -22,7 +22,7 @@ class CoreController extends Controller implements TranslatorAwareInterface
     protected $container;
 
     /**
-     * @var
+     * @var Translator
      */
     protected $translator;
 

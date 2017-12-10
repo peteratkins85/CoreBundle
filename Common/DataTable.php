@@ -1,13 +1,13 @@
 <?php
 
-namespace Oni\CoreBundle\Common;
+namespace App\Oni\CoreBundle\Common;
 
 /**
  * Class DataTable
  * @package Oni\CoreBundle\Common
  * @author peter.atkins85@gmail.com
  */
-abstract class DataTable implements DataTableInterface
+class DataTable
 {
 
     /**
@@ -75,15 +75,19 @@ abstract class DataTable implements DataTableInterface
      */
     protected $fields;
 
+    protected $dataTableQueryManager;
+
 
     /**
      * DataTable constructor.
      * @param $request
+     * @param DataTableQueryManagerInterface $dataTableQueryManager
      */
-    public function __construct($request)
+    public function __construct($request, DataTableQueryManagerInterface $dataTableQueryManager)
     {
         $this->init($request);
-        $this->setResults($this->queryData());
+        $this->dataTableQueryManager = $dataTableQueryManager;
+        $this->setResults($this->dataTableQueryManager->queryData($this));
     }
 
     /**
@@ -158,11 +162,6 @@ abstract class DataTable implements DataTableInterface
     }
 
     /**
-     * Query data source
-     */
-    abstract public function queryData();
-
-    /**
      * @return string
      */
     public function getSearch()
@@ -203,7 +202,8 @@ abstract class DataTable implements DataTableInterface
     }
 
     /**
-     * @param array $results
+     * @param $results
+     * @return $this
      */
     public function setResults($results)
     {

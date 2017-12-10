@@ -6,14 +6,14 @@
  * Time: 02:07
  */
 
-namespace Oni\CoreBundle\Factory\Service;
+namespace App\Oni\CoreBundle\Factory\Service;
 
 
-use Oni\CoreBundle\Entity\City;
-use Oni\CoreBundle\Entity\Country;
-use Oni\CoreBundle\Entity\Currency;
-use Oni\CoreBundle\Entity\Nationality;
-use Oni\CoreBundle\Service\CountryService;
+use App\Oni\CoreBundle\Entity\City;
+use App\Oni\CoreBundle\Entity\Country;
+use App\Oni\CoreBundle\Entity\Currency;
+use App\Oni\CoreBundle\Entity\Nationality;
+use App\Oni\CoreBundle\Service\CountryService;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class CountryServiceFactory  {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Entity;
+namespace App\Oni\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -106,6 +106,13 @@ class Currency
     }
 
     /**
+     * @return $this
+     */
+    public function getCurrency(){
+        return $this;
+    }
+
+    /**
      * Get enabled
      *
      * @return bool
@@ -186,4 +193,10 @@ class Currency
     {
         return $this->currencyName;
     }
+
+    public function __toString()
+    {
+        return $this->getCurrencyName() ?: '';
+    }
+
 }

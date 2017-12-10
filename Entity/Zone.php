@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Entity;
+namespace App\Oni\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -28,10 +28,19 @@ class Zone
      */
     private $zoneName;
 
+
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Country", mappedBy="zones")
+     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Country", inversedBy="zones")
+     * @ORM\JoinTable(name="oni_zone_country_relations",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="countryId", referencedColumnName="id")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="zoneId", referencedColumnName="id")
+     *   }
+     * )
      */
     private $countries;
 
@@ -105,11 +114,11 @@ class Zone
     /**
      * Add country
      *
-     * @param \Oni\CoreBundle\Entity\Country $country
+     * @param \App\Oni\CoreBundle\Entity\Country $country
      *
      * @return Zone
      */
-    public function addCountry(\Oni\CoreBundle\Entity\Country $country)
+    public function addCountry(\App\Oni\CoreBundle\Entity\Country $country)
     {
         $this->countries[] = $country;
 
@@ -119,9 +128,9 @@ class Zone
     /**
      * Remove country
      *
-     * @param \Oni\CoreBundle\Entity\Country $country
+     * @param \App\Oni\CoreBundle\Entity\Country $country
      */
-    public function removeCountry(\Oni\CoreBundle\Entity\Country $country)
+    public function removeCountry(\App\Oni\CoreBundle\Entity\Country $country)
     {
         $this->countries->removeElement($country);
     }
@@ -134,5 +143,18 @@ class Zone
     public function getCountries()
     {
         return $this->countries;
+    }
+
+    /**
+     * @return $this
+     */
+    public function getZone()
+    {
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getZoneName();
     }
 }

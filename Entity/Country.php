@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Entity;
+namespace App\Oni\CoreBundle\Entity;
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -95,15 +95,7 @@ class Country
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Zone", inversedBy="countries")
-     * @ORM\JoinTable(name="oni_zone_country_relations",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="zoneId", referencedColumnName="id")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="countryId", referencedColumnName="id")
-     *   }
-     * )
+     * @ORM\ManyToMany(targetEntity="Oni\CoreBundle\Entity\Zone", mappedBy="countries")
      */
     private $zones;
 
@@ -297,11 +289,11 @@ class Country
     /**
      * Add zone
      *
-     * @param \Oni\CoreBundle\Entity\Zone $zone
+     * @param \App\Oni\CoreBundle\Entity\Zone $zone
      *
      * @return Country
      */
-    public function addZone(\Oni\CoreBundle\Entity\Zone $zone)
+    public function addZone(\App\Oni\CoreBundle\Entity\Zone $zone)
     {
         $this->zones[] = $zone;
 
@@ -311,9 +303,9 @@ class Country
     /**
      * Remove zone
      *
-     * @param \Oni\CoreBundle\Entity\Zone $zone
+     * @param \App\Oni\CoreBundle\Entity\Zone $zone
      */
-    public function removeZone(\Oni\CoreBundle\Entity\Zone $zone)
+    public function removeZone(\App\Oni\CoreBundle\Entity\Zone $zone)
     {
         $this->zones->removeElement($zone);
     }
@@ -331,11 +323,11 @@ class Country
     /**
      * Add city
      *
-     * @param \Oni\CoreBundle\Entity\City $city
+     * @param \App\Oni\CoreBundle\Entity\City $city
      *
      * @return Country
      */
-    public function addCity(\Oni\CoreBundle\Entity\City $city)
+    public function addCity(\App\Oni\CoreBundle\Entity\City $city)
     {
         $this->cities[] = $city;
 
@@ -345,9 +337,9 @@ class Country
     /**
      * Remove city
      *
-     * @param \Oni\CoreBundle\Entity\City $city
+     * @param \App\Oni\CoreBundle\Entity\City $city
      */
-    public function removeCity(\Oni\CoreBundle\Entity\City $city)
+    public function removeCity(\App\Oni\CoreBundle\Entity\City $city)
     {
         $this->cities->removeElement($city);
     }
@@ -389,11 +381,11 @@ class Country
     /**
      * Add nationality
      *
-     * @param \Oni\CoreBundle\Entity\Nationality $nationality
+     * @param \App\Oni\CoreBundle\Entity\Nationality $nationality
      *
      * @return Country
      */
-    public function addNationality(\Oni\CoreBundle\Entity\Nationality $nationality)
+    public function addNationality(\App\Oni\CoreBundle\Entity\Nationality $nationality)
     {
         $this->nationalities[] = $nationality;
 
@@ -403,9 +395,9 @@ class Country
     /**
      * Remove nationality
      *
-     * @param \Oni\CoreBundle\Entity\Nationality $nationality
+     * @param \App\Oni\CoreBundle\Entity\Nationality $nationality
      */
-    public function removeNationality(\Oni\CoreBundle\Entity\Nationality $nationality)
+    public function removeNationality(\App\Oni\CoreBundle\Entity\Nationality $nationality)
     {
         $this->nationalities->removeElement($nationality);
     }

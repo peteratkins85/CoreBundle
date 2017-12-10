@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Tests;
+namespace App\Oni\CoreBundle\Tests;
 
 trait CoreTestCase {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Form\DataTransformer;
+namespace App\Oni\CoreBundle\Form\DataTransformer;
 
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\TransformationFailedException;

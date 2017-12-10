@@ -14,7 +14,6 @@ ONI.ui.dataTable = ONI_Datatable = Class.create(ONI, {
         this.selector = $(config.selector);
         this.setColumns();
         this.buildDataTable();
-
     },
     buildDataTable: null,
     setColumns: function () {
