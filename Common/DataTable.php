@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Oni\CoreBundle\Common;
+namespace Oni\CoreBundle\Common;
 
 /**
  * Class DataTable

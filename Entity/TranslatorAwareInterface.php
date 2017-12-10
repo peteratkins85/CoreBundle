@@ -7,7 +7,7 @@
  * Time: 13:25
  */
 
-namespace App\Oni\CoreBundle\Entity;
+namespace Oni\CoreBundle\Entity;
 
 use Symfony\Component\Translation\TranslatorInterface;
 

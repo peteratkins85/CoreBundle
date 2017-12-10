@@ -6,7 +6,7 @@
  * Time: 22:12
  */
 
-namespace App\Oni\CoreBundle\Doctrine\Spec;
+namespace Oni\CoreBundle\Doctrine\Spec;
 
 
 interface Cacheable {

@@ -6,7 +6,7 @@
  * Time: 23:29
  */
 
-namespace App\Oni\CoreBundle\Entity\Traits;
+namespace Oni\CoreBundle\Entity\Traits;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;

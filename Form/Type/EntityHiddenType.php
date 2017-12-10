@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Oni\CoreBundle\Form\Type;
+namespace Oni\CoreBundle\Form\Type;
 
-use App\Oni\CoreBundle\Form\DataTransformer\EntityViewTransformer;
+use Oni\CoreBundle\Form\DataTransformer\EntityViewTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Doctrine\Common\Persistence\ObjectManager;
-use App\Oni\CoreBundle\Form\DataTransformer\EntityToIdTransformer;
+use Oni\CoreBundle\Form\DataTransformer\EntityToIdTransformer;
 
 class EntityHiddenType extends AbstractType
 {

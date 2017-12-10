@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace App\Oni\CoreBundle;
+namespace Oni\CoreBundle;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 

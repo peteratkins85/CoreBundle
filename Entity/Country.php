@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Oni\CoreBundle\Entity;
+namespace Oni\CoreBundle\Entity;
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -289,11 +289,11 @@ class Country
     /**
      * Add zone
      *
-     * @param \App\Oni\CoreBundle\Entity\Zone $zone
+     * @param \Oni\CoreBundle\Entity\Zone $zone
      *
      * @return Country
      */
-    public function addZone(\App\Oni\CoreBundle\Entity\Zone $zone)
+    public function addZone(\Oni\CoreBundle\Entity\Zone $zone)
     {
         $this->zones[] = $zone;
 
@@ -303,9 +303,9 @@ class Country
     /**
      * Remove zone
      *
-     * @param \App\Oni\CoreBundle\Entity\Zone $zone
+     * @param \Oni\CoreBundle\Entity\Zone $zone
      */
-    public function removeZone(\App\Oni\CoreBundle\Entity\Zone $zone)
+    public function removeZone(\Oni\CoreBundle\Entity\Zone $zone)
     {
         $this->zones->removeElement($zone);
     }
@@ -323,11 +323,11 @@ class Country
     /**
      * Add city
      *
-     * @param \App\Oni\CoreBundle\Entity\City $city
+     * @param \Oni\CoreBundle\Entity\City $city
      *
      * @return Country
      */
-    public function addCity(\App\Oni\CoreBundle\Entity\City $city)
+    public function addCity(\Oni\CoreBundle\Entity\City $city)
     {
         $this->cities[] = $city;
 
@@ -337,9 +337,9 @@ class Country
     /**
      * Remove city
      *
-     * @param \App\Oni\CoreBundle\Entity\City $city
+     * @param \Oni\CoreBundle\Entity\City $city
      */
-    public function removeCity(\App\Oni\CoreBundle\Entity\City $city)
+    public function removeCity(\Oni\CoreBundle\Entity\City $city)
     {
         $this->cities->removeElement($city);
     }
@@ -381,11 +381,11 @@ class Country
     /**
      * Add nationality
      *
-     * @param \App\Oni\CoreBundle\Entity\Nationality $nationality
+     * @param \Oni\CoreBundle\Entity\Nationality $nationality
      *
      * @return Country
      */
-    public function addNationality(\App\Oni\CoreBundle\Entity\Nationality $nationality)
+    public function addNationality(\Oni\CoreBundle\Entity\Nationality $nationality)
     {
         $this->nationalities[] = $nationality;
 
@@ -395,9 +395,9 @@ class Country
     /**
      * Remove nationality
      *
-     * @param \App\Oni\CoreBundle\Entity\Nationality $nationality
+     * @param \Oni\CoreBundle\Entity\Nationality $nationality
      */
-    public function removeNationality(\App\Oni\CoreBundle\Entity\Nationality $nationality)
+    public function removeNationality(\Oni\CoreBundle\Entity\Nationality $nationality)
     {
         $this->nationalities->removeElement($nationality);
     }

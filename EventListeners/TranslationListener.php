@@ -1,5 +1,5 @@
 <?php
-namespace App\Oni\CoreBundle\EventListeners;
+namespace Oni\CoreBundle\EventListeners;
 
 use Doctrine\ORM\Event\PreUpdateEventArgs;
 use Doctrine\ORM\Events;

@@ -6,10 +6,10 @@
  * Time: 13:09
  */
 
-namespace App\Oni\CoreBundle\Entity\Repository;
+namespace Oni\CoreBundle\Entity\Repository;
 
 
-use App\Oni\CoreBundle\Entity\TranslatorAwareInterface;
+use Oni\CoreBundle\Entity\TranslatorAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 interface CoreRepositoryInterface extends ContainerAwareInterface, TranslatorAwareInterface {

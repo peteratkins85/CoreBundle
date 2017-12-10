@@ -6,7 +6,7 @@
  * Time: 22:02
  */
 
-namespace App\Oni\CoreBundle\EventListeners;
+namespace Oni\CoreBundle\EventListeners;
 
 use Symfony\Component\EventDispatcher\EventDispatcher;
 

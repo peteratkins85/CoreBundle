@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Oni\CoreBundle\Factory\Controller;
+namespace Oni\CoreBundle\Factory\Controller;
 
-use App\Oni\CoreBundle\Controller\GeneralServiceController;
-use App\Oni\CoreBundle\Factory\CoreAbstractFactory;
+use Oni\CoreBundle\Controller\GeneralServiceController;
+use Oni\CoreBundle\Factory\CoreAbstractFactory;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**

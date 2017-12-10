@@ -6,11 +6,11 @@
  * Time: 13:35
  */
 
-namespace App\Oni\CoreBundle\Doctrine\Spec\City;
+namespace Oni\CoreBundle\Doctrine\Spec\City;
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use App\Oni\CoreBundle\Doctrine\Spec\Specification;
+use Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class CitySearch implements Specification {
 

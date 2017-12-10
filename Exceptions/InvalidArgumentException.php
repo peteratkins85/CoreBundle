@@ -6,7 +6,7 @@
  * Time: 21:39
  */
 
-namespace App\Oni\CoreBundle\Exceptions;
+namespace Oni\CoreBundle\Exceptions;
 
 use \Exception;
 

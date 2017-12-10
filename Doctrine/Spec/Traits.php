@@ -6,7 +6,7 @@
  * Time: 01:07
  */
 
-namespace App\Oni\CoreBundle\Doctrine\Spec;
+namespace Oni\CoreBundle\Doctrine\Spec;
 
 
 trait Traits

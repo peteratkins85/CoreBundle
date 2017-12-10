@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Oni\CoreBundle\Entity\Repository;
+namespace Oni\CoreBundle\Entity\Repository;
 
-use App\Oni\CoreBundle\Doctrine\Spec\Specification;
+use Oni\CoreBundle\Doctrine\Spec\Specification;
 
 /**
  * CurrencyRepository

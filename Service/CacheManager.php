@@ -6,7 +6,7 @@
  * Time: 23:21
  */
 
-namespace App\Oni\CoreBundle\Service;
+namespace Oni\CoreBundle\Service;
 
 
 class CacheManager implements CacheManagerInterface{

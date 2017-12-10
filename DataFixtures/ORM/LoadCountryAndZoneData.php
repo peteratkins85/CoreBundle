@@ -10,8 +10,8 @@ namespace Oni\ProductManagerBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use App\Oni\CoreBundle\Entity\Country;
-use App\Oni\CoreBundle\Entity\Zone;
+use Oni\CoreBundle\Entity\Country;
+use Oni\CoreBundle\Entity\Zone;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\AbstractFixture;

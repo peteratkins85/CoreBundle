@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Oni\CoreBundle\Doctrine\Spec\Common;
+namespace Oni\CoreBundle\Doctrine\Spec\Common;
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use App\Oni\CoreBundle\Doctrine\Spec\Specification;
+use Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class IdEquals implements Specification
 {

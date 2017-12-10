@@ -6,7 +6,7 @@
  * Time: 00:35
  */
 
-namespace App\Oni\CoreBundle\Twig;
+namespace Oni\CoreBundle\Twig;
 
 use \Twig_Extension;
 

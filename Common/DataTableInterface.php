@@ -6,7 +6,7 @@
  * Time: 20:55
  */
 
-namespace App\Oni\CoreBundle\Common;
+namespace Oni\CoreBundle\Common;
 
 
 interface DataTableInterface

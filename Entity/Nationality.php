@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Oni\CoreBundle\Entity;
+namespace Oni\CoreBundle\Entity;
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -110,11 +110,11 @@ class Nationality
     /**
      * Set country
      *
-     * @param \App\Oni\CoreBundle\Entity\Country $country
+     * @param \Oni\CoreBundle\Entity\Country $country
      *
      * @return Nationality
      */
-    public function setCountry(\App\Oni\CoreBundle\Entity\Country $country = null)
+    public function setCountry(\Oni\CoreBundle\Entity\Country $country = null)
     {
         $this->country = $country;
 
@@ -124,7 +124,7 @@ class Nationality
     /**
      * Get country
      *
-     * @return \App\Oni\CoreBundle\Entity\Country
+     * @return \Oni\CoreBundle\Entity\Country
      */
     public function getCountry()
     {

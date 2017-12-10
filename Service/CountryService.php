@@ -6,16 +6,16 @@
  * Time: 23:18
  */
 
-namespace App\Oni\CoreBundle\Service;
+namespace Oni\CoreBundle\Service;
 
 
-use App\Oni\CoreBundle\Doctrine\Spec\City\CitySearch;
-use App\Oni\CoreBundle\Doctrine\Spec\City\GetCitiesByCountry;
-use App\Oni\CoreBundle\Doctrine\Spec\Currency\GetCurrenciesByCodes;
-use App\Oni\CoreBundle\Entity\Repository\CityRepository;
-use App\Oni\CoreBundle\Entity\Repository\CountryRepository;
-use App\Oni\CoreBundle\Entity\Repository\CurrencyRepository;
-use App\Oni\CoreBundle\Entity\Repository\NationalityRepository;
+use Oni\CoreBundle\Doctrine\Spec\City\CitySearch;
+use Oni\CoreBundle\Doctrine\Spec\City\GetCitiesByCountry;
+use Oni\CoreBundle\Doctrine\Spec\Currency\GetCurrenciesByCodes;
+use Oni\CoreBundle\Entity\Repository\CityRepository;
+use Oni\CoreBundle\Entity\Repository\CountryRepository;
+use Oni\CoreBundle\Entity\Repository\CurrencyRepository;
+use Oni\CoreBundle\Entity\Repository\NationalityRepository;
 
 class CountryService {
 	
@@ -30,12 +30,12 @@ class CountryService {
 	protected $cityRepository;
 
 	/**
-	 * @var \App\Oni\CoreBundle\Entity\Repository\NationalityRepository
+	 * @var \Oni\CoreBundle\Entity\Repository\NationalityRepository
 	 */
 	protected $nationalityRepository;
 
 	/**
-	 * @var \App\Oni\CoreBundle\Entity\Repository\CurrencyRepository
+	 * @var \Oni\CoreBundle\Entity\Repository\CurrencyRepository
 	 */
 	protected $currencyRepository;
 

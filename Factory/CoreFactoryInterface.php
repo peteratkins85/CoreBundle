@@ -6,7 +6,7 @@
  * Time: 17:38
  */
 
-namespace App\Oni\CoreBundle\Factory;
+namespace Oni\CoreBundle\Factory;
 
 
 use Symfony\Component\DependencyInjection\ContainerInterface;

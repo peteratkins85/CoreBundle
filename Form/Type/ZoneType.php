@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Oni\CoreBundle\Form\Type;
+namespace Oni\CoreBundle\Form\Type;
 
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use App\Oni\CoreBundle\Entity\Country;
-use App\Oni\CoreBundle\Entity\Zone;
+use Oni\CoreBundle\Entity\Country;
+use Oni\CoreBundle\Entity\Zone;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

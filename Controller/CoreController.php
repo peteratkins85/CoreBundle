@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Oni\CoreBundle\Controller;
+namespace Oni\CoreBundle\Controller;
 
-use App\Oni\CoreBundle\Entity\Repository\LanguagesRepository;
-use App\Oni\CoreBundle\Entity\TranslatorAwareInterface;
+use Oni\CoreBundle\Entity\Repository\LanguagesRepository;
+use Oni\CoreBundle\Entity\TranslatorAwareInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Oni\ProductManagerBundle\Entity\Products;

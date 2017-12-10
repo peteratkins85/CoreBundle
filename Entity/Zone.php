@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Oni\CoreBundle\Entity;
+namespace Oni\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -114,11 +114,11 @@ class Zone
     /**
      * Add country
      *
-     * @param \App\Oni\CoreBundle\Entity\Country $country
+     * @param \Oni\CoreBundle\Entity\Country $country
      *
      * @return Zone
      */
-    public function addCountry(\App\Oni\CoreBundle\Entity\Country $country)
+    public function addCountry(\Oni\CoreBundle\Entity\Country $country)
     {
         $this->countries[] = $country;
 
@@ -128,9 +128,9 @@ class Zone
     /**
      * Remove country
      *
-     * @param \App\Oni\CoreBundle\Entity\Country $country
+     * @param \Oni\CoreBundle\Entity\Country $country
      */
-    public function removeCountry(\App\Oni\CoreBundle\Entity\Country $country)
+    public function removeCountry(\Oni\CoreBundle\Entity\Country $country)
     {
         $this->countries->removeElement($country);
     }

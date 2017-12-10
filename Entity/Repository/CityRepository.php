@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Oni\CoreBundle\Entity\Repository;
+namespace Oni\CoreBundle\Entity\Repository;
 
 use Doctrine\ORM\Query\Expr;
-use App\Oni\CoreBundle\Doctrine\Spec\Specification;
+use Oni\CoreBundle\Doctrine\Spec\Specification;
 
 /**
  * CityRepository

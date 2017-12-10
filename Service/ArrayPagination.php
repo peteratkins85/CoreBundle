@@ -6,7 +6,7 @@
  * Time: 23:46
  */
 
-namespace App\Oni\CoreBundle\Service;
+namespace Oni\CoreBundle\Service;
 
 
 class ArrayPagination {

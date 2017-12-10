@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Oni\CoreBundle\Factory\Common;
+namespace Oni\CoreBundle\Factory\Common;
 
-use App\Oni\CoreBundle\Common\DataTable;
-use App\Oni\CoreBundle\Common\DoctrineSpecificationQueryManager;
-use App\Oni\CoreBundle\Entity\Repository\RepositorySpecificationInterface;
+use Oni\CoreBundle\Common\DataTable;
+use Oni\CoreBundle\Common\DoctrineSpecificationQueryManager;
+use Oni\CoreBundle\Entity\Repository\RepositorySpecificationInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Security\Acl\Exception\Exception;
 

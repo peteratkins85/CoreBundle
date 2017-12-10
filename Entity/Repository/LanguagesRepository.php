@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Oni\CoreBundle\Entity\Repository;
+namespace Oni\CoreBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityRepository;
-use App\Oni\CoreBundle\CoreGlobals;
+use Oni\CoreBundle\CoreGlobals;
 
 /**
  * LanguagesRepository

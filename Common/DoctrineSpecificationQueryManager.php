@@ -6,16 +6,16 @@
  * Time: 07:24
  */
 
-namespace App\Oni\CoreBundle\Common;
+namespace Oni\CoreBundle\Common;
 
 
 use Doctrine\Common\Persistence\ObjectRepository;
-use App\Oni\CoreBundle\Common\CoreCommon;
-use App\Oni\CoreBundle\Common\DataTable;
-use App\Oni\CoreBundle\Common\DataTableQueryManager;
-use App\Oni\CoreBundle\Entity\Repository\RepositorySpecificationInterface;
+use Oni\CoreBundle\Common\CoreCommon;
+use Oni\CoreBundle\Common\DataTable;
+use Oni\CoreBundle\Common\DataTableQueryManager;
+use Oni\CoreBundle\Entity\Repository\RepositorySpecificationInterface;
 use Oni\ProductManagerBundle\Doctrine\Spec\ProductCategory\ProductCategorySearch;
-use App\Oni\CoreBundle\Doctrine\Spec\LocaleTrait;
+use Oni\CoreBundle\Doctrine\Spec\LocaleTrait;
 use Exception;
 
 class DoctrineSpecificationQueryManager extends DataTableQueryManager
