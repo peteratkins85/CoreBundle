@@ -6,7 +6,7 @@
  * Time: 21:04
  */
 
-namespace Oni\CoreBundle;
+namespace App\Oni\CoreBundle;
 
 
 final class CoreEvents {

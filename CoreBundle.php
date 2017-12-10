@@ -1,8 +1,8 @@
 <?php
 
-namespace Oni\CoreBundle;
+namespace App\Oni\CoreBundle;
 
-use Oni\CoreBundle\DependencyInjection\Compiler\CoreCompilerPass;
+use App\Oni\CoreBundle\DependencyInjection\Compiler\CoreCompilerPass;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 

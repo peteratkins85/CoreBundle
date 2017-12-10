@@ -10,11 +10,11 @@ namespace Oni\ProductManagerBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Oni\CoreBundle\Entity\Currency;
+use App\Oni\CoreBundle\Entity\Currency;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Oni\CoreBundle\Entity\Languages;
+use App\Oni\CoreBundle\Entity\Languages;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
 class LoadCurrencyData extends AbstractFixture implements OrderedFixtureInterface ,FixtureInterface, ContainerAwareInterface

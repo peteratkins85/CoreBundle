@@ -1,6 +1,6 @@
 <?php
 
-namespace Oni\CoreBundle\Common;
+namespace App\Oni\CoreBundle\Common;
 
 
 interface DataTableQueryManagerInterface

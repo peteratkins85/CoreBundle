@@ -6,13 +6,13 @@
  * Time: 23:51
  */
 
-namespace Oni\CoreBundle\Controller;
+namespace App\Oni\CoreBundle\Controller;
 
 
 use FOS\RestBundle\Controller\FOSRestController;
-use Oni\CoreBundle\CoreBundle;
-use Oni\CoreBundle\Entity\City;
-use Oni\CoreBundle\Service\CountryService;
+use App\Oni\CoreBundle\CoreBundle;
+use App\Oni\CoreBundle\Entity\City;
+use App\Oni\CoreBundle\Service\CountryService;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Serializer\Encoder\JsonEncode;
@@ -20,7 +20,7 @@ use Symfony\Component\Serializer\Encoder\JsonEncode;
 class GeneralServiceController extends CoreController{
 
 	/**
-	 * @var \Oni\CoreBundle\Service\CountryService
+	 * @var \App\Oni\CoreBundle\Service\CountryService
 	 */
 	protected $countryService;
 

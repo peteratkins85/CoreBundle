@@ -6,12 +6,12 @@
  * Time: 15:33
  */
 
-namespace Oni\CoreBundle\Doctrine\Spec\Currency;
+namespace App\Oni\CoreBundle\Doctrine\Spec\Currency;
 
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use Oni\CoreBundle\Doctrine\Spec\Specification;
+use App\Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class CurrencyCodeIn implements Specification{
 

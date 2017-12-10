@@ -6,7 +6,7 @@
  * Time: 10:12
  */
 
-namespace Oni\CoreBundle\Doctrine\Spec;
+namespace App\Oni\CoreBundle\Doctrine\Spec;
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;

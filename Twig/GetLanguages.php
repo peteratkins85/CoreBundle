@@ -6,7 +6,7 @@
  * Time: 23:22
  */
 
-namespace Oni\CoreBundle\Twig;
+namespace App\Oni\CoreBundle\Twig;
 
 
 

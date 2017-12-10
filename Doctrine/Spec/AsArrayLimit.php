@@ -6,16 +6,16 @@
  * Time: 10:12
  */
 
-namespace Oni\CoreBundle\Doctrine\Spec;
+namespace App\Oni\CoreBundle\Doctrine\Spec;
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use Oni\CoreBundle\Doctrine\Spec\Specification;
+use App\Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class AsArrayLimit implements Specification
 {
     /**
-     * @var \Oni\CoreBundle\Doctrine\Spec\Specification
+     * @var \App\Oni\CoreBundle\Doctrine\Spec\Specification
      */
 	private $parent;
 
@@ -31,7 +31,7 @@ class AsArrayLimit implements Specification
 
     /**
      * AsArrayLimit constructor.
-     * @param \Oni\CoreBundle\Doctrine\Spec\Specification $parent
+     * @param \App\Oni\CoreBundle\Doctrine\Spec\Specification $parent
      * @param int $maxResults
      */
 	public function __construct(Specification $parent, int $maxResults = 0, int $offSet = 0)

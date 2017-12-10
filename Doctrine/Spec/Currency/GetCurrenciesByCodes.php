@@ -1,11 +1,11 @@
 <?php
 
-namespace Oni\CoreBundle\Doctrine\Spec\Currency;
+namespace App\Oni\CoreBundle\Doctrine\Spec\Currency;
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use Oni\CoreBundle\Doctrine\Spec\AsArray;
-use Oni\CoreBundle\Doctrine\Spec\Specification;
+use App\Oni\CoreBundle\Doctrine\Spec\AsArray;
+use App\Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class GetCurrenciesByCodes implements Specification {
 

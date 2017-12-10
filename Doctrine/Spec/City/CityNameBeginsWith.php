@@ -1,11 +1,11 @@
 <?php
 
-namespace Oni\CoreBundle\Doctrine\Spec\City;
+namespace App\Oni\CoreBundle\Doctrine\Spec\City;
 
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use Oni\CoreBundle\Doctrine\Spec\Specification;
+use App\Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class CityNameBeginsWith implements Specification
 {

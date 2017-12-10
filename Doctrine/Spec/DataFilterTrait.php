@@ -6,12 +6,12 @@
  * Time: 19:40
  */
 
-namespace Oni\CoreBundle\Doctrine\Spec;
+namespace App\Oni\CoreBundle\Doctrine\Spec;
 
 
-use Oni\CoreBundle\Common\LocaleAwareInterface;
-use Oni\CoreBundle\Exceptions\InvalidArgumentException;
-use Oni\CoreBundle\Exceptions\RuntimeException;
+use App\Oni\CoreBundle\Common\LocaleAwareInterface;
+use App\Oni\CoreBundle\Exceptions\InvalidArgumentException;
+use App\Oni\CoreBundle\Exceptions\RuntimeException;
 
 /**
  * Class DataFilterTrait

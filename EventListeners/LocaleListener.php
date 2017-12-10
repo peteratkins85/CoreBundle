@@ -1,7 +1,7 @@
 <?php
-namespace Oni\CoreBundle\EventListeners;
+namespace App\Oni\CoreBundle\EventListeners;
 
-use Oni\CoreBundle\SessionKeys;
+use App\Oni\CoreBundle\SessionKeys;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;

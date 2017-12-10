@@ -13,7 +13,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Oni\CoreBundle\Entity\Languages;
+use App\Oni\CoreBundle\Entity\Languages;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
 class LoadLanguageData extends AbstractFixture implements OrderedFixtureInterface ,FixtureInterface, ContainerAwareInterface

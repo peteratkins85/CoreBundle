@@ -1,10 +1,10 @@
 <?php
 
-namespace Oni\CoreBundle\Doctrine\Spec\Common;
+namespace App\Oni\CoreBundle\Doctrine\Spec\Common;
 
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
-use Oni\CoreBundle\Doctrine\Spec\Specification;
+use App\Oni\CoreBundle\Doctrine\Spec\Specification;
 
 class FindAll implements Specification
 {

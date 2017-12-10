@@ -6,7 +6,7 @@
  * Time: 16:24
  */
 
-namespace Oni\CoreBundle\Common;
+namespace App\Oni\CoreBundle\Common;
 
 
 abstract class DataTableQueryManager implements DataTableQueryManagerInterface

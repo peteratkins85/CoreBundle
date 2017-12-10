@@ -6,11 +6,11 @@
  * Time: 19:04
  */
 
-namespace Oni\CoreBundle\Entity\Repository;
+namespace App\Oni\CoreBundle\Entity\Repository;
 
 
 use Doctrine\Common\Persistence\ObjectRepository;
-use Oni\CoreBundle\Doctrine\Spec\Specification;
+use App\Oni\CoreBundle\Doctrine\Spec\Specification;
 
 interface RepositorySpecificationInterface extends ObjectRepository
 {
